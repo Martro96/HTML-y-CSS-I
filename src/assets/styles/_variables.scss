@@ -1,8 +1,13 @@
 @use "sass:color";
 
-/*:root {
+:root {
 
   /* Definir las variables de colores */
-  /*--texto: rgb(22, 18, 0);
+  --texto: rgb(22, 18, 0);
+  --texto-spam: #FF5995;
 
-}*/
+  --fondo__Body: rgb(255,255,255);
+  --hover1: #FFE459;
+  --hover2: #FF5995;
+
+}
