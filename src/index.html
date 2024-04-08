@@ -1,48 +1,309 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
+    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss">
+    <!-- do not remove this line! -->
     <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
     <!--En caso de darme erro swiper de nuevo, aplicar estas líneas   
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
     <title>Homepage - Alicia Piqueras</title>
-  </head>
-  <body>
+</head>
+
+<body>
     <div class="notebook-grid"></div>
-    <div class="container--homepage">     
+    <div class="container--homepage">
         <include src="./views/nav.html"></include>
         <div class="container--homepage__bloque1">
             <div class="bloque1--intro">
-                <p class="bloque1--texto1">
-                    Product designer specialized 
-                    <br>in mentoring, enhacing ideas 
-                    <br>and giving products a <span>creative boost.</span>
+                <p class="bloque1--intro__texto1">
+                    Product designer specialized
+                    <br>in mentoring, enhacing ideas <br>and giving products a
+                    <span>creative boost.</span>
                 </p>
-                <img class="bloque1--foto1" src="./assets/images/sparkles.png" alt="sparkles">
-            <div class="bloque1--texto">
-                <p>
-                    With over 5 years of experience in design and photography, my passion is driven by creating new landscapes, with a computer, a pencil or a camera. 
-                </p>    
-                <p>
-                    I started with photography, defined myself with graphic design, matured with UX design, and now I enjoy helping other people achieve their goals.
-                </p>
-                <p>
-                    As a designer, I love embarking on new projects and putting all my creativity, knowledge, and work into creating a more inclusive, accessible, and creative digital world.
-                </p>
-                <p>
-                    As a Mentor, my goal is to provide my students with an enriching experience that takes them to the next level of their professional career.
-                </p>
-
+                <img class="bloque1--intro__foto1" src="./assets/images/sparkles.png" alt="sparkles">
             </div>
-
+            <div class="bloque1--texto">
+                <div class="bloque1--texto_1">
+                    <p>
+                        With over 5 years of experience in design and photography, my
+                        passion is driven by creating new landscapes, with a computer, a
+                        pencil or a camera.
+                    </p>
+                    <p>
+                        I started with photography, defined myself with graphic design,
+                        matured with UX design, and now I enjoy helping other people
+                        achieve their goals.
+                    </p>
+                </div>
+                <div class="bloque1--texto_2">
+                    <p>
+                        As a designer, I love embarking on new projects and putting all my
+                        creativity, knowledge, and work into creating a more inclusive,
+                        accessible, and creative digital world.
+                    </p>
+                    <p>
+                        As a Mentor, my goal is to provide my students with an enriching
+                        experience that takes them to the next level of their professional
+                        career.
+                    </p>
+                </div>
             </div>
         </div>
-    
-    
+        <!--HIGHLIGHTS-->
+        <div class="highlights">
+            <img class="highlights--img" src="./assets/images/Highlights.png" alt="highlights">
+            <div class="highlights--cards">
+                <!--HIGHLIGHTS CARD 1-->
+                <div class="highlights--cards__card">
+                    <a class="card--link" href="#">
+                        <div class="card--content">
+                            <img class="card--img" src="./assets/images/education.png" alt="Education">
+                            <div class="card--info">
+                                <p class="card--info__button">currently on</p>
+                                <p class="card--info__item">EDUCATION</p>
+                                <p class="card--info__info">
+                                    Discover more about my passion for teaching.
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!--HIGHLIGHTS CARD 2-->
+                <div class="highlights--cards__card">
+                    <a class="card--link" href="#">
+                        <div class="card--content">
+                            <img class="card--img" src="./assets/images/home24.jpg" alt="Home24">
+                            <div class="card--info">
+                                <p class="card--info__button">achievement</p>
+                                <p class="card--info__item">HOME24</p>
+                                <p class="card--info__info">
+                                    See how our project becomes reality.
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!--HIGHLIGHTS CARD 3-->
+                <div class="highlights--cards__card">
+                    <a class="card--link" href="#">
+                        <div class="card--content">
+                            <img class="card--img" src="./assets/images/logofolio.jpg" alt="logofolio">
+                            <div class="card--info">
+                                <p class="card--info__button">graphic design</p>
+                                <p class="card--info__item">LOGOFOLIO</p>
+                                <p class="card--info__info">
+                                    Check my latests graphic design works.
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!--UX/UI-->
+        <div class="ux">
+            <img class="ux--img" src="./assets/images/UX.png" alt="UX/UI">
+
+            <!--CARD 1 UX/UI-->
+
+            <div class="ux--cards__container">
+                <div class="ux--card">
+                    <div class="ux--card__bloque1">
+                        <div class="card--bloque1__texto">
+                            <p class="texto--etiqueta">ux research</p>
+                            <p class="texto--etiqueta">marketing strategy</p>
+                        </div>
+                        <h2 class="texto--titulo">Home 24 x BUTLERS</h2>
+                        <h3 class="texto--subtitulo">
+                            Where an online furniture shop meets the streets.
+                        </h3>
+                        <table class="texto--tabla__tabla">
+                            <thead>
+                                <tr>
+                                    <th class="table--col">Duration</th>
+                                    <th class="table--col">Date</th>
+                                    <th class="table--col">Team</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th class="table--row">2 weeks</th>
+                                    <td class="table--row">June 2023</td>
+                                    <td class="table--row">
+                                        Alicia Piqueras, <br>Miren Zubizarreta, <br>Sara
+                                        Hernández, <br>Luis Forero
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="ux--card__bloque2">
+                        <a class="card--link" href="#">
+                            <img class="card--bloque1__img" src="./assets/images/case-study-24xbutlers.png"
+                                alt="Case study Home 24 x Butlers">
+                        </a>
+                    </div>
+                </div>
+
+                <!--CARD 2 UX/UI-->
+
+                <div class="ux--card">
+                    <div class="ux--card__bloque1">
+                        <div class="card--bloque1__texto">
+                            <p class="texto--etiqueta">e-commerce</p>
+                            <p class="texto--etiqueta">branding</p>
+                        </div>
+                        <h2 class="texto--titulo">Morokk SNKRS</h2>
+                        <h3 class="texto--subtitulo">
+                            Bringing an E-bay shop to the next level.
+                        </h3>
+                        <table class="texto--tabla__tabla">
+                            <thead>
+                                <tr>
+                                    <th class="table--col">Duration</th>
+                                    <th class="table--col">Date</th>
+                                    <th class="table--col">Team</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th class="table--row">2 weeks</th>
+                                    <td class="table--row">June 2023</td>
+                                    <td class="table--row">Alicia Piqueras, <br>Sam Tyson</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="ux--card__bloque2">
+                        <a class="card--link" href="#">
+                            <img class="card--bloque1__img" src="./assets/images/case-study-Morokk.png"
+                                alt="Case study Home 24 x Butlers">
+                        </a>
+                    </div>
+                </div>
+
+                <!--CARD 3 UX/UI-->
+
+                <div class="ux--card">
+                    <div class="ux--card__bloque1">
+                        <div class="card--bloque1__texto">
+                            <p class="texto--etiqueta">redesign</p>
+                            <p class="texto--etiqueta">heuristic design</p>
+                        </div>
+                        <h2 class="texto--titulo">Splitwise redesign</h2>
+                        <h3 class="texto--subtitulo">
+                            Track bills and other shared expenses.
+                        </h3>
+                        <table class="texto--tabla__tabla">
+                            <thead>
+                                <tr>
+                                    <th class="table--col">Duration</th>
+                                    <th class="table--col">Date</th>
+                                    <th class="table--col">Team</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th class="table--row">1 week</th>
+                                    <td class="table--row">June 2023</td>
+                                    <td class="table--row">Alicia Piqueras</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="ux--card__bloque2">
+                        <a class="card--link" href="#">
+                            <img class="card--bloque1__img" src="./assets/images/case-study-Splitwise.png"
+                                alt="Case study Home 24 x Butlers">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--GRAPHIC DESIGN-->
+        <div class="graphicdesign">
+            <img class="graphicdesign--img__intro" src="./assets/images/Graphic-Design.png" alt="Graphic Design">
+
+            <div class="gd--container">
+                <div class="gd--card">
+                    <!--<img class="graphicdesign--card__img" src="./assets/images/education.png" alt="Marlena Branding"> -->
+                    <img class="graphicdesign--icon" src="./assets/images/favicon.png" alt="Marlene Visual Identity">
+                    <div class="graphicdesign--texto">
+                        <div class="graphicdesign--info">
+                            <p class="graphicdesign--info__header">Visual Identity</p>
+                            <p class="graphicdesign--info__subtitle">
+                                Marlena Branding Proposal 1
+                            </p>
+                        </div>
+                        <div class="graphicdesign--link">
+                            <p class="graphicdesign--link__link">+ see more</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gd--card">
+                    <!--<img class="graphicdesign--card__img" src="./assets/images/education.png" alt="Marlena Branding"> -->
+                    <img class="graphicdesign--icon" src="./assets/images/favicon.png" alt="Marlene Visual Identity">
+                    <div class="graphicdesign--texto">
+                        <div class="graphicdesign--info">
+                            <p class="graphicdesign--info__header">Visual Identity</p>
+                            <p class="graphicdesign--info__subtitle">
+                                Marlena Branding Proposal 1
+                            </p>
+                        </div>
+                        <div class="graphicdesign--link">
+                            <p class="graphicdesign--link__link">+ see more</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="gd--card">
+                    <!--<img class="graphicdesign--card__img" src="./assets/images/education.png" alt="Marlena Branding"> -->
+                    <img class="graphicdesign--icon" src="./assets/images/favicon.png" alt="Marlene Visual Identity">
+                    <div class="graphicdesign--texto">
+                        <div class="graphicdesign--info">
+                            <p class="graphicdesign--info__header">Visual Identity</p>
+                            <p class="graphicdesign--info__subtitle">
+                                Marlena Branding Proposal 1
+                            </p>
+                        </div>
+                        <div class="graphicdesign--link">
+                            <p class="graphicdesign--link__link">+ see more</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="gd--card">
+                    <!--<img class="graphicdesign--card__img" src="./assets/images/education.png" alt="Marlena Branding"> -->
+                    <img class="graphicdesign--icon" src="./assets/images/favicon.png" alt="Marlene Visual Identity">
+                    <div class="graphicdesign--texto">
+                        <div class="graphicdesign--info">
+                            <p class="graphicdesign--info__header">Visual Identity</p>
+                            <p class="graphicdesign--info__subtitle">
+                                Marlena Branding Proposal 1
+                            </p>
+                        </div>
+                        <div class="graphicdesign--link">
+                            <p class="graphicdesign--link__link">+ see more</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+    <!--ESTRELLITAS FINALES-->
+    <img class="final--stars" src="./assets/images/stars-final.png" alt="Estrellas final">
+
     </div>
     <include src="./views/footer.html"></include>
-  </body>
-  </html>
+
+</body>
+
+</html>
