@@ -22,7 +22,9 @@ body {
     align-items: center;
     padding-top: 20px;
 }
-
+.main-nav__item-email {
+    visibility: hidden;
+}
 .main-nav__list {
     display: flex;
     justify-content:flex-end;
@@ -98,6 +100,61 @@ body {
     padding: 15px;
     border-radius: 15px;
     border: solid 1px black;
+}
+
+/*NAV RESPONSIVE*/
+/*NAV TABLET*/
+
+@media only screen and (max-width: 1396px) {
+    /*NAV*/
+    .main-nav__link.main-nav__dircorreo {
+        display: none;
+    }
+    .main-nav__link {
+        visibility: visible;
+    }
+
+    /*BLOQUE 1*/
+    .bloque1--intro__texto1 {
+        font-size: 48px !important;
+    }
+    .bloque1--intro__foto1 {
+        width: 190.578px;
+        height: 134.436px;
+    }
+    .bloque1--texto {
+        display: flex;
+        flex-direction: column;
+        gap: 40px !important;
+    }
+
+    /*HIGHLIGHTS*/
+    .highlights--cards {
+        width: 90%;
+    }
+    .highlights--cards__card {
+        width: 253.018px;
+        height: 267.728px;
+    }
+    .card--info__button {
+        font-size: 10.297px;
+    }
+    .card--info__item {
+        font-size: 30.305px;
+    }
+    .card--info__info {
+        font-size: 17.652px;
+    }  
+
+    /*GRAPHIC DESIGN*/
+    .graphicdesign {
+        padding-bottom: 60px;
+    }
+    
+}
+/*NAV PHONE*/
+@media only screen and (max-width: 1023px) {
+
 }
 
 /*FOOTER*/
@@ -221,7 +278,11 @@ span {
     position:absolute;
     display: flex;
     right: 20px;
-    top: 30px;
+    top: 70px;
+    width: 272.499px;
+    height: 192.226px;
+    transform: rotate(26.236deg);
+    flex-shrink: 0;
 }
 
 .bloque1--texto {
@@ -237,16 +298,13 @@ span {
 .highlights {
     display: flex;
     flex-direction: column;
-    width: 85%;
+    gap: 67px;
     margin: auto;
-    gap: 70px;
     padding-top: 100px;
-    background-color: transparent;
 }
 .highlights--img {
     margin: auto;
     background-color: transparent;
-
 }
 .highlights--cards {
     display: flex;
@@ -254,11 +312,10 @@ span {
     text-decoration: none;
     z-index: 0;
     margin: auto;
-    background-color: transparent;
 }
 .highlights--cards__card {
     width: 370px;
-    height: 390px;
+    height: 392px;
     border: 5px solid var(--PINK-500);
     border-radius: 20px;
     overflow: hidden;
@@ -443,6 +500,7 @@ figure {
     margin: auto;
     padding-bottom: 100px;
     align-items: center;
+    gap: 67px;
 }
 .graphicdesign--img__intro {
     margin: auto;
@@ -452,7 +510,6 @@ figure {
 .gd--container {
     display: flex;
     flex-direction: column;
-    gap: 30px;
     height: 100vh;
 }
 
@@ -555,5 +612,4 @@ figure {
 .final--stars {
     margin: auto;
     display: flex;
-    padding: 100px 0px;
 }
