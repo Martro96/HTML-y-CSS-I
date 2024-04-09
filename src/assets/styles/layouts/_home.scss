@@ -10,19 +10,8 @@ body {
     font-family: 'Confortaa', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: var(--fondo__Body); 
+    background-color: var(--WHITE); 
     position: relative; /* Establece el cuerpo como relativo para poder poner el resto encima*/
-}
-
-.notebook-grid {
-    width: 100vw; 
-    height: 100%; 
-    background-image: 
-    linear-gradient(0deg, rgba(115, 196, 255, 0.3) 3px, transparent 1px),
-    linear-gradient(90deg, rgba(115, 196, 255, 0.3) 3px, transparent 1px);
-    background-size: 80px 80px; 
-    z-index: 0;
-    position: absolute;
 }
 
 /*NAV*/
@@ -33,21 +22,49 @@ body {
     align-items: center;
     padding-top: 20px;
 }
+
 .main-nav__list {
     display: flex;
     justify-content:flex-end;
     list-style: none;
     width: 100%;
 }
+.figure--alicia {
+    position:relative;
+    cursor: pointer;
+}
 .main-nav__link--alicia {
     order: -1; 
-    color: var(--texto);
+    color: var(--BLACK);
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 32px;
     width:100%;
+    position: relative;
+    z-index: 1;
 }
+.alicia-hovered {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 2;
+}
+.alicia-hovered__img {
+    position: relative;
+    top: -50px;
+    left: -21px;
+}
+.main-nav__link--alicia:hover + .alicia-hovered {
+    opacity: 1;
+    visibility: visible;
+    order: -1; 
+}
+
 .main-nav__link--info {
-    color: var(--texto);
+    color: var(--BLACK);
     align-self: center;
     justify-content: space-around;
     padding-left: 10px;
@@ -57,19 +74,19 @@ body {
 }
 .main-nav__link, 
 .main-nav__link--span {
-    color: var(--texto);
+    color: var(--BLACK);
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 24px;
     margin: 20px;
 }
 .main-nav__link:first-child:hover {
-    background-color: var(--hover1); 
+    background-color: var(--YELLOW-500); 
     padding: 15px;
     border-radius: 15px;
     border: solid 1px black;
 }
 .main-nav__link:last-child:hover {
-    background-color: var(--hover1); 
+    background-color: var(--YELLOW-500); 
     padding: 15px;
     border-radius: 15px;
     border: solid 1px black;
@@ -77,10 +94,99 @@ body {
 
 /* Estilos para los enlaces centrales */
  .main-nav__link--span:hover {
-    background-color: var(--hover2); 
+    background-color: var(--PINK-500); 
     padding: 15px;
     border-radius: 15px;
     border: solid 1px black;
+}
+
+/*FOOTER*/
+
+footer {
+    background-image: url(../images/background-grid.png);
+    background-position: bottom;
+    background-color: var(--WHITE);
+    
+}
+.footer--container {
+    display: flex;
+    padding: 30px;
+    margin: auto;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 58px;
+    margin: auto;
+    width: fit-content;
+}
+.footer--header {
+    color: var(--BLACK);
+    font-family: 'Nimbus', sans-serif;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0.1px;
+}
+.footer--info {
+    display: flex;
+    align-items: flex-start;
+    gap: 19px;
+}
+.info--1 {
+    display: flex;
+    padding: 28px 43px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 35px; 
+    width: 100%;
+}
+.info--1:hover {
+    border-radius: 107px;
+    border: 4px solid var(--BLACK);
+    background: var(--GREEN-LIME-500);
+}
+.info--2 {
+    display: flex;
+    padding: 28px 43px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 35px;
+    width: 100%;
+}
+.info--2:hover {
+    border-radius: 61px;
+    border: 4px solid var(--BLACK);
+    width: 100%;
+    background: var(--YELLOW-500);
+
+}
+.footer--title {
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 14px; /* 43.75% */
+    letter-spacing: 0.1px;
+}
+.footer-link {
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 14px; /* 43.75% */
+    letter-spacing: 0.1px;
+    text-decoration-line: underline;
+    color: var(--BLACK);
+}
+
+/*BACKGROUND*/
+.notebook-grid {
+    width: 100vw; 
+    height: 100%; 
+    background-image: 
+    linear-gradient(0deg, rgba(115, 196, 255, 0.9) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(115, 196, 255, 0.9) 1px, transparent 1px);
+    background-size: 80px 80px; 
+    z-index: 0;
+    position: absolute;
 }
 
 /*body homepage*/
@@ -109,7 +215,7 @@ body {
     position: relative;
 }
 span {
-    color: var(--texto-spam);
+    color: var(--PINK-500);
 }
 .bloque1--intro__foto1 {
     position:absolute;
@@ -153,7 +259,7 @@ span {
 .highlights--cards__card {
     width: 370px;
     height: 390px;
-    border: 5px solid var(--hover2);
+    border: 5px solid var(--PINK-500);
     border-radius: 20px;
     overflow: hidden;
     background-color: transparent;
@@ -171,7 +277,7 @@ span {
     bottom: 20px;
     left: 20px;
     z-index: 2;
-    color: var(--texto2);
+    color: var(--WHITE);
     text-decoration: none;
 }
 .card--content:before {
@@ -184,10 +290,10 @@ span {
 }
 .card--info__button {
     padding: 10px;
-    color: var(--texto);
+    color: var(--BLACK);
     font-weight: bolder !important;
     font-size: 15px;
-    background-color: var(--hover2);
+    background-color: var(--PINK-500);
     border: 1px solid black;
     width: fit-content;
     border-radius: 20px;
@@ -198,7 +304,7 @@ span {
     font-family: 'Nimbus', sans-serif;
     font-size: 48px;
     margin: 0;
-    text-shadow: 8px 8px 16px var(--texto);
+    text-shadow: 8px 8px 16px var(--BLACK);
 }
 .card--info__info {
     bottom: -5px;
@@ -208,11 +314,11 @@ span {
 }
 .card--link:hover {
     .card--info__button {
-        background-color: var(--hover1);
+        background-color: var(--YELLOW-500);
     }
 }
 .highlights--cards__card:hover {
-    border: 5px solid var(--hover1);
+    border: 5px solid var(--YELLOW-500);
 }
 
 /*UX/UI*/
@@ -237,7 +343,7 @@ span {
     display: flex;
     border: 4px solid black;
     border-radius: 20px;
-    background-color: var(--fondo--card__ux);
+    background-color: var(--fondo--card);
     width: 912px;
     height: 418px;
     padding: 20px;
@@ -262,7 +368,7 @@ span {
     padding: 10px;
     border-radius: 20px;
     border: 1px solid black;
-    background-color: var(--hover1);
+    background-color: var(--YELLOW-500);
 
 }
 .texto--titulo {
@@ -293,13 +399,42 @@ span {
     align-items: center;
     display: flex;
 }
+figure {
+    position: relative;
+    cursor: pointer;
+}
 .card--bloque1__img{
     width: 344px;
     height: 342.5px;
 }
-/*.card--link:hover {
-    background-color: var(--bg__capa);
-}*/
+
+.card--link__hovered {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--bg__capa);
+    transition: all 400ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+    border-radius: 20px;
+    }
+.ux--card__bloque2 figure:hover > .card--link__hovered {
+    opacity: 1;
+    visibility: visible;
+}
+.hovered--header {
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    color: var(--WHITE);
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    font-size: 24px;
+    text-decoration: underline;
+}
+
 
 /*GRAPHIC DESIGN*/
 .graphicdesign {
@@ -322,6 +457,7 @@ span {
 }
 
 .gd--card {
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     display: flex;
     width: 1052px;
     height: 153px;
@@ -334,28 +470,57 @@ span {
     position: relative;
     margin: auto;
     z-index: 0;
-    background-image: url(../images/logofolio.jpg);
 }
-/*.graphicdesign--card__img::before {
-    content: '';
+.cd--card__link:hover {
+    cursor: pointer;
+}
+.gd--card__1 {
+    background-image: url(../images/MARLENA-20240409T153234Z-001/-HOME-BRANDING-MARLENA/3/cartel-fuera.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.gd--card__2 {
+    background-image: url(../images/MARLENA-20240409T153234Z-001/-HOME-BRANDING-MARLENA/1/business-cards-1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.gd--card__3 {
+    background-image: url(../images/MARLENA-20240409T153234Z-001/-HOME-BRANDING-MARLENA/2/cartel-fuera-cristal.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.gd--card__4 {
+    background-image: url(../images/MARLENA-20240409T153234Z-001/-HOME-BRANDING-MARLENA/2/cartel-fuera-cristal.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.gd--card::before {
+    content: "";
     position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     background-color: var(--bg__capa);
-    z-index: 1;
-}*/
+}
+    
 .graphicdesign--icon {
     width: 127px;
     height: 127px;
     display: flex;
     align-self: center;
+    border-radius: 50%;
+    padding: 5px;
+    object-fit: cover;
+    z-index: 1;
 }
 .graphicdesign--texto {
     display: flex;
     align-items: flex-end;
     width: 100%;
     gap:350px;
-    color: var(--texto2);
+    color: var(--WHITE);
+    z-index: 1;
 }
 .graphicdesign--info__header {
     font-family: Nimbus, sans-serif;
@@ -380,7 +545,12 @@ span {
     line-height: 24px;
     letter-spacing: 0.1px;
 }
-
+.graphicdesign--link__link {
+    color: var(--WHITE);
+    bottom: 10px;
+    position: absolute;
+    text-decoration: none;
+}
 /*ESTRELLITAS FINALES*/
 .final--stars {
     margin: auto;

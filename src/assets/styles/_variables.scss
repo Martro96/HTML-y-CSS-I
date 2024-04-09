@@ -3,14 +3,16 @@
 :root {
 
   /* Definir las variables de colores */
-  --texto: rgb(22, 18, 0);
-  --texto-spam: #FF5995;
-  --texto2: rgb(255,255,255);
+  --YELLOW-500: #FFE459;
+  --BLUE-500: #599BFF;
+  --GREEN-LIME-500: #A2FF59;
+  --PINK-500: #FF5995;
+  --WHITE: #FFFEF8;
+  --BLACK: #212121;
+  --LINES-BLUE-500: #73C4FF;
+  --cherry-red: #F65050;
 
-  --fondo__Body: rgb(255,255,255);
-  --fondo--card__ux: #FFFEF8;
-  --hover1: #FFE459;
-  --hover2: #FF5995;
+  --fondo--card: #FFFEF8;
   --bg__capa: rgba(0, 0, 0, 0.6);
 
 }
