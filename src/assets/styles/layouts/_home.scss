@@ -128,7 +128,8 @@ footer {
         linear-gradient(0deg, var(--WHITE) 1px, transparent 1px);
     background-size: 80px 80px;
     background-color: var(--WHITE);
-
+    z-index: 1 !important;
+    position: relative;
 }
 
 .footer--container {
