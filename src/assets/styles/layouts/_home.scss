@@ -72,7 +72,6 @@ body {
     top: -50px;
     left: -21px;
 }
-
 .main-nav__link--alicia:hover+.alicia-hovered {
     opacity: 1;
     visibility: visible;
@@ -661,6 +660,13 @@ figure {
         text-decoration: none;
         position: relative;
     }
+    .alicia-hovered__img {
+        width: 220px;
+        height: 80px;
+        position: relative;
+        top: -30px;
+        left: -15px;
+    }
     .figure--alicia {
         cursor: pointer;
         position: relative;
@@ -893,9 +899,16 @@ figure {
 }
 
 /*TABLET*/
-@media only screen and (min-width: 768px) and (max-width: 999px) {
+@media only screen and (min-width: 768px) and (max-width: 1400px) {
 
     /*NAV*/
+    .alicia-hovered__img {
+        width: 290px;
+        height: 80px;
+        position: relative;
+        top: -30px;
+        left: -15px;
+    }
     .main-nav__link, .main-nav__link--span {
         visibility: visible;
         margin: 3px;
