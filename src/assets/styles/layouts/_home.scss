@@ -274,7 +274,10 @@ span {
     width: 90%;
     margin: auto;
 }
-
+/*SWIPER*/
+.swiper {
+    display: none !important;
+}
 /*highlights*/
 .highlights {
     display: flex;
@@ -756,31 +759,31 @@ figure {
         display: flex;
         flex-direction: column;
     }
+    .highlights--img {
+        padding: 0px 50px;
+    }
+    .swiper {
+        display: block !important;
+        width: 90%;    
+        margin-top: 30px;
+    }
+    .swiper-slide {
+        width: 370px;
+        height: 392px;
+        border: 5px solid var(--PINK-500);
+        border-radius: 20px;
+        overflow: hidden;
+        background-color: transparent;
+    }
+    .card--link:hover, .swiper-slide:hover {
+        border: 5px solid var(--YELLOW-500);
+    }
 
-    /*HIGHLIGHTS DEBERÍA IR SWIPER*/
+    /*CAMBIO HIGHLIGHTS POR SWIPER*/
     .highlights--cards {
-        padding: 20px;
+        display: none !important;
     }
-    .highlights--cards__card {
-        width: 300px !important;
-    }
-    /*.card--info {
-        z-index: 2;
-        color: var(--WHITE);
-        text-decoration: none;
-        position: absolute;
-        bottom: 20px;
-        left: 20px;
-    }*/
-    .card--info__button {
-        font-size: 15px !important;
-    }
-    .card--info__item {
-        font-size: 32px !important;
-    }
-    .card--info__info {
-        font-size: 16px !important;
-    }
+
     /*UX/UI*/
     .ux--cards__container {
         gap: 33px;
@@ -960,7 +963,10 @@ figure {
     .card--info__info {
         font-size: 16px !important;
     }
-
+    /*SWIPER*/
+    .swiper {
+        display: none !important;
+    }
         /*UX/UI*/
     .ux--card {
         gap: 20px;

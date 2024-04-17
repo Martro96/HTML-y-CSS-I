@@ -1,23 +1,30 @@
-/*import Swiper from 'swiper';
-/*import { Navigation, Pagination } from 'swiper/modules';
-// import Swiper and modules styles
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
+import Swiper from 'swiper';
 
-// init Swiper: NO SÉ SI LO ESTOY PONIENDO BIEN
+// Importar los estilos de Swiper y los módulos necesarios
+import 'swiper/swiper-bundle.css';
+
+// Inicializar Swiper
 const swiper = new Swiper('.swiper', {
     direction: "horizontal",
-	loop: true,
-    slidesPerView: 3,
-    spaceBetween: 30,
+    loop: true,
+    slidesPerView: 1,
+    spaceBetween: 10,
     
-    modules: [Navigation, Pagination],
+    // Agregar los módulos de navegación y paginación
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
 
-	autoplay: {
-		delay: 5000,
-	}
+    autoplay: {
+        delay: 5000,
+    },
 });
+
 
 /****MENÚ HAMBURGUESA******/
 document.addEventListener("DOMContentLoaded", function() {
