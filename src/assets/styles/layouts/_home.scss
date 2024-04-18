@@ -266,6 +266,17 @@ span {
     flex-shrink: 0;
     overflow: hidden !important;
 }
+.bloque1--intro__fotoworks {
+    flex-shrink: 0;
+    width: 200px;
+    height: 150px;
+    display: flex;
+    position: absolute;
+    top: 0px;
+    right: 200px;
+    transform: rotate(354deg);
+    overflow: hidden !important;
+}
 
 .bloque1--texto {
     display: flex;
@@ -639,6 +650,7 @@ figure {
 .final--stars {
     margin: auto;
     display: flex;
+    padding-bottom: 50px;
 }
 
 /*RESPONSIVE*/
@@ -752,6 +764,17 @@ figure {
         right: -40px !important;
         top: 10px !important;
     }
+    .bloque1--intro__fotoworks {
+        flex-shrink: 0;
+        width: 100px;
+        height: 100px;
+        display: flex;
+        position: absolute;
+        top: -10px;
+        right: -40px;
+        transform: rotate(354deg);
+        overflow: hidden !important;
+    }
     .bloque1--texto {
         gap: 20px !important;
         width: 90%;
@@ -815,6 +838,9 @@ figure {
     .ux--card__bloque2 {
         width: 100%;
         object-fit: cover !important; 
+    }
+    .card--link:hover {
+        border: 0 !important;
     }
     .card--bloque1__img {
         object-fit: cover !important; 
@@ -940,6 +966,17 @@ figure {
         left: 550px !important;
         transform: rotate(4deg) !important;
         overflow: hidden;
+    }
+    .bloque1--intro__fotoworks {
+        flex-shrink: 0;
+        width: 100px;
+        height: 100px;
+        display: flex;
+        position: absolute;
+        top: -10px;
+        right: -40px;
+        transform: rotate(354deg);
+        overflow: hidden !important;
     }
     .bloque1--texto {
         display: flex;
