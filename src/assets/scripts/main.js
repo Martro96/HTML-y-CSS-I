@@ -1,5 +1,4 @@
 import Swiper from 'swiper';
-
 // Importar los estilos de Swiper y los módulos necesarios
 import 'swiper/swiper-bundle.css';
 
