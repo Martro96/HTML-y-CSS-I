@@ -791,6 +791,9 @@ figure {
     justify-content: center;
     position: relative;
 }
+.whilenot--card:hover {
+    border: solid 5px var(--PINK-500);
+}
 
 .whilenot--card1 {
     background-image: url(../images/photography.jpg);
@@ -1176,11 +1179,7 @@ figure {
         list-style-type: none;
         padding-left: 0;
     }
-    .about--ul--item::before {
-        content: "-"; 
-        margin-right: 5px;
-    }
-    
+        
     .about--items-2 {
         width: 100%;
     }
@@ -1359,120 +1358,57 @@ figure {
     }
     /*ABOUT ME*/
     .container--about {
-        border-radius: 20px;
-        background-color: var(--fondo--card);
-        border: solid 3px black;
-        padding: 20px 45px;
-        display: flex;
-        gap: 40px;
         margin: auto;
-        width: 85%;
+        width: 95%;
         margin-top: 50px;
-    }
-    .container--about__bloque1 {
+        margin-bottom: 50px;
         display: flex;
         flex-direction: column;
+        padding: 0px !important;
+        gap: 0px;
     }
-    .about--header {
-        font-family: Nimbus, sans-serif;
-        font-size: 32px;
-        font-style: normal;
-        font-weight: 400;
-        letter-spacing: 0.1px;
+    .container--about__bloque1 {
+        padding: 20px;
+        margin-bottom: 0px;
     }
-    .about--tools__item {
-        border-radius: 16px;
-        border: 1px solid var(--BLACK, #212121);
-        background: var(--WHITE);
-        width: fit-content;
-        padding: 10px;
-    }
-    .item_lime:hover {
-        background-color: var(--BLACK);
-        color: var(--GREEN-LIME-500);
-    }
-    .item_blue:hover {
-        background-color: var(--BLACK);
-        color: var(--BLUE-500);
-    }
-    .item_yellow:hover {
-        color: var(--YELLOW-500);
-        background-color: var(--BLACK);
-    }
-    .item_pink:hover {
-        color: var(--PINK-500);
-        background-color: var(--BLACK);
-    }
+    .about--bloque1__img {
+        width: 100%;
+        height: 35vh;
+        flex-shrink: 0;
+        object-fit: cover;
+        border-radius: 17px;
+    }    
     .about--bloque1__tools {
         align-items: flex-start;
         align-content: flex-start;
-        gap: 30px 21px;
+        gap: 21px;
         flex-shrink: 0;
         flex-wrap: wrap;
         display: flex;
     }
     .about--bloque1__sparkles {
-        display: flex;
-        justify-content: start;
-        width: 260.424px;
-        height: 246.05px;
-        padding-top: 30px;
+        display: none;
     }
-    
-    .about--bloque2__header {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        color: var(--BLACK);
-        text-align: center;
-        font-size: 32px;
+    .about--aboutme {
+        padding: 20px;
+        font-size: 18px;
         font-style: normal;
         font-weight: 400;
+        line-height: 24px; /* 133.333% */
         letter-spacing: 0.1px;
-    }
+    } 
     .about--parts {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
+        padding: 20px;
     }
     .about--items__skills {
-        align-items: flex-start;
-        align-content: flex-start;
-        gap: 30px 21px;
-        flex-shrink: 0;
-        flex-wrap: wrap;
-        display: flex;
+        gap: 10px;
     }
-    .about--list {
-        list-style-type: none;
-        padding-left: 0;
-    }
-    .about--ul--item::before {
-        content: "-"; 
-        margin-right: 5px;
-    }
-    .about--list-1,
-    .about--list-2 {
-        grid-row: 1;
-    }
-    
     .about--items-1,
     .about--items-2 {
-        grid-row: 2;
+        width: 80%; 
     }
-    .about--items-2 {
-        width: 60%;
-    }
-    .whilenotdesigning {
-        margin: auto;
-        margin-top: 50px;
-        margin-bottom: 100px;
-        text-align: center;
-    }
+    /*WHILE NOT DESIGNING*/
     .whilenot--header {
-        color: var(--BLACK);
-        font-feature-settings: 'clig' off, 'liga' off;
-        font-family: Nimbus, sans-serif;
         font-size: 64px;
         font-style: normal;
         font-weight: 400;
@@ -1480,60 +1416,18 @@ figure {
     }
     .whilenot--cards {
         gap: 30px;
-        width: 90%;
+        width:100%;
         align-items: center;
         justify-content: center;
         margin: auto;
         display: flex;
     }
     .whilenot--card {
-        width: 413px;
-        height: 630px;
-        border-radius: 20px;
-        border: solid 5px var(--YELLOW-500);
-        overflow: hidden;
-        display: flex;
-        align-items: center; 
-        justify-content: center;
-        position: relative;
-    }
-    
-    .whilenot--card1 {
-        background-image: url(../images/photography.jpg);
-        background-position: center;
-        background-size: cover;
-    }
-    .whilenot--card2 {
-        background-image: url(../images/DIY.jpg);
-        background-position: center;
-        background-size: cover;
-    }
-    .whilenot--card3 {
-        background-image: url(../images/voluntarier.jpg);
-        background-position: center;
-        background-size: cover;
-    }
-    .whilenot--card::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: var(--bg__capa);
-        z-index: 1;
+        width: 271.4px;
+        height: 414px;
     }
     .while--card__text {
-        color: var(--WHITE);
-        font-family: Nimbus, sans-serif;
-        font-size: 48px;
-        font-style: normal;
-        font-weight: 400;
-        letter-spacing: 0.1px;
-        align-items: center;
-        justify-content: center;
-        z-index: 2;
-        position: relative;
+        font-size: 30px;
     }
 
 
