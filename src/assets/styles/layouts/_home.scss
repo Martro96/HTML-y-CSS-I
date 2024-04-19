@@ -1174,13 +1174,8 @@ figure {
         flex-shrink: 0;
         flex-wrap: wrap;
         display: flex;
-    }
-    .about--list {
-        list-style-type: none;
-        padding-left: 0;
-    }
-        
-    .about--items-2 {
+    }      
+    .about--items-1, .about--items-2 {
         width: 100%;
     }
     .whilenotdesigning {
