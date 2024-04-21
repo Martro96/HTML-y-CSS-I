@@ -693,22 +693,22 @@ figure {
     padding: 10px;
 }
 
-.item_lime:hover {
+.item--lime:hover {
     background-color: var(--BLACK);
     color: var(--GREEN-LIME-500);
 }
 
-.item_blue:hover {
+.item--blue:hover {
     background-color: var(--BLACK);
     color: var(--BLUE-500);
 }
 
-.item_yellow:hover {
+.item--yellow:hover {
     color: var(--YELLOW-500);
     background-color: var(--BLACK);
 }
 
-.item_pink:hover {
+.item--pink:hover {
     color: var(--PINK-500);
     background-color: var(--BLACK);
 }
@@ -942,12 +942,12 @@ figure {
     margin: 50px;
 }
 
-.info--RTD {
+.info--rtd {
     display: flex;
     gap: 20px;
 }
 
-.header--RTD {
+.header--rtd {
     color: var(--BLACK);
     /* H2 */
     font-family: 'Nimbus', sans-serif;
@@ -959,7 +959,7 @@ figure {
     letter-spacing: 0.1px;
 }
 
-.RTD--etiquetas {
+.rtd--etiquetas {
     display: flex;
     gap: 20px;
 }
@@ -970,7 +970,7 @@ figure {
     position: relative;
 }
 
-.RTD--TD {
+.rtd--td {
     font-size: 24px;
     font-style: normal;
     font-weight: 400;
@@ -980,19 +980,19 @@ figure {
     margin: 40px;
 }
 
-.texto--RTD1 {
+.texto--rtd1 {
     position: relative;
     bottom: -40px;
     left: -100px;
 }
 
-.texto--RTD2 {
+.texto--rtd2 {
     position: relative;
     bottom: -75px;
     left: -40px;
 }
 
-.estrellas--RTD {
+.estrellas--rtd {
     position: relative;
     bottom: 150px;
     right: -400px;
@@ -1419,7 +1419,10 @@ figure {
         width: 100%;
         object-fit: cover !important;
     }
-
+    .card--link {
+        width: 100%;
+        object-fit: cover !important;
+    }
     .card--link:hover {
         border: 0 !important;
     }
@@ -1429,10 +1432,6 @@ figure {
         width: 100% !important;
     }
 
-    .card--link {
-        width: 100%;
-        object-fit: cover !important;
-    }
 
     figure {
         cursor: pointer;
@@ -1632,7 +1631,6 @@ figure {
 
     .case--info1 {
         z-index: 2;
-        display: block;
         flex-direction: column;
         margin: auto;
         align-items: center;
@@ -1660,16 +1658,16 @@ figure {
         margin: 20px;
     }
 
-    .info--RTD {
+    .info--rtd {
         display: flex;
     }
 
-    .header--RTD {
+    .header--rtd {
         font-size: 32px;
         margin-bottom: 60px
     }
 
-    .RTD--etiquetas {
+    .rtd--etiquetas {
         display: flex;
         gap: 10px;
         width: 100%;
@@ -1682,23 +1680,23 @@ figure {
         position: relative;
     }
 
-    .RTD--TD {
+    .rtd--td {
         width: 100vw;
     }
 
-    .texto--RTD1 {
+    .texto--rtd1 {
         position: relative;
         bottom: -130px;
         left: -185px;
     }
 
-    .texto--RTD2 {
+    .texto--rtd2 {
         position: relative;
         bottom: -190px;
         left: -185px;
     }
 
-    .estrellas--RTD {
+    .estrellas--rtd {
         display: none;
     }
 
@@ -2144,7 +2142,6 @@ figure {
         width: 100%;
         height: auto;
         object-fit: cover;
-        height: auto;
         z-index: 1;
         margin: auto;
         justify-content: center;
@@ -2176,12 +2173,12 @@ figure {
         margin: 10px;
     }
 
-    .info--RTD {
+    .info--rtd {
         top: -10px;
         position: relative;
     }
 
-    .header--RTD {
+    .header--rtd {
         margin: 10px;
     }
 
@@ -2190,18 +2187,18 @@ figure {
         left: -100px;
         position: relative;
     }
-    .texto--RTD1 {
+    .texto--rtd1 {
         position: relative;
         bottom: 20px;
         left: -110px;
     }
 
-    .texto--RTD2 {
+    .texto--rtd2 {
         position: relative;
         bottom: 15px;
         left: -50px;
     }
-    .estrellas--RTD {
+    .estrellas--rtd {
         display: none;
     }
 
