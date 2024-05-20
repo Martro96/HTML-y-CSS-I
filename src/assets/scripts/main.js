@@ -38,3 +38,19 @@ document.addEventListener("DOMContentLoaded", function() {
         nav.classList.remove("main-nav__link--info--visible"); 
     });
 });
+
+//PARA EL MENU ACTIVE
+document.addEventListener('DOMContentLoaded', function() {
+    // Obtener la URL actual
+    var currentUrl = window.location.pathname.split('/').pop();
+
+    // Obtener todos los enlaces del menú
+    var menuLinks = document.querySelectorAll('.main-nav__link, .main-nav__link--span');
+
+    // Recorrer los enlaces y añadir la clase "active" al enlace que coincida con la URL actual
+    menuLinks.forEach(function(link) {
+        if (link.getAttribute('href') === currentUrl || link.getAttribute('href') === window.location.href) {
+            link.classList.add('active');
+        }
+    });
+});

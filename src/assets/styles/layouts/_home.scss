@@ -75,7 +75,7 @@ body {
 }
 
 .main-nav__link--alicia:hover+.alicia-hovered {
-    opacity: 1;
+    opacity: 1 !important;
     visibility: visible;
     order: -1;
 }
@@ -96,29 +96,32 @@ body {
     text-decoration: none;
     font-size: 24px;
     margin: 20px;
+    padding: 10px;
 }
 
-.main-nav__link:first-child:hover {
+.main-nav__link:first-child:hover, .main-nav__link.active:first-child {
     background-color: var(--YELLOW-500);
     padding: 15px;
     border-radius: 15px;
     border: solid 1px black;
 }
 
-.main-nav__link:last-child:hover {
+.main-nav__link:last-child:hover, .main-nav__link.active:last-child {
     background-color: var(--YELLOW-500);
-    padding: 15px;
+    padding: 10px;
     border-radius: 15px;
     border: solid 1px black;
 }
 
 /* Estilos para los enlaces centrales */
-.main-nav__link--span:hover {
+.main-nav__link--span:hover, .main-nav__link--span.active {
     background-color: var(--PINK-500);
-    padding: 15px;
+    padding: 10px;
     border-radius: 15px;
     border: solid 1px black;
 }
+
+
 
 /*FOOTER*/
 
@@ -223,7 +226,35 @@ footer {
     z-index: 0;
     position: absolute;
 }
+/*FORMAS CLIP PATH*/
+.forma-elipse {
+    width: 226px; 
+    height: 106px; 
+    background-color: var(--GREEN-LIME-500);
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    border-radius: 50%; 
+    border-bottom: 10px solid var(--BLACK); 
+    box-sizing: border-box; 
+    margin: auto;
+    transform: rotate(355deg);
 
+}
+.forma-elipse__texto {
+    color: var(--BLACK); 
+    font-family: Nimbus, sans-serif;
+    font-size: 32px; 
+    font-style: normal;
+    font-weight: 400;
+    line-height: 14px; 
+    letter-spacing: 0.1px;
+    text-align: center; 
+    transform: rotate(-355deg);
+}
+.graphic-design {
+    line-height: 1.6rem;
+}
 /*body homepage*/
 .container--homepage {
     z-index: 1;
@@ -396,6 +427,7 @@ span {
     flex-direction: column;
     margin: auto;
     padding: 100px 0;
+    gap: 67px;
 }
 
 .ux--img {
@@ -716,7 +748,7 @@ figure {
 .about--bloque1__tools {
     align-items: flex-start;
     align-content: flex-start;
-    gap: 30px 21px;
+    gap: 0px 21px !important;
     flex-shrink: 0;
     flex-wrap: wrap;
     display: flex;
@@ -741,7 +773,9 @@ figure {
     font-weight: 400;
     letter-spacing: 0.1px;
 }
-
+.about--aboutme__text {
+    line-height: 1.5em;
+}
 .about--parts {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -751,7 +785,7 @@ figure {
 .about--items__skills {
     align-items: flex-start;
     align-content: flex-start;
-    gap: 30px 21px;
+    gap: 0px 21px !important;
     flex-shrink: 0;
     flex-wrap: wrap;
     display: flex;
@@ -1578,8 +1612,6 @@ figure {
 
     .about--aboutme__text {
         font-size: 18px;
-        line-height: 24px;
-        /* 133.333% */
         letter-spacing: 0.1px;
     }
 
@@ -1847,7 +1879,9 @@ figure {
     .main-nav__item,
     .main-nav__item-email,
     .main-nav__link--alicia {
-        padding: 2px;
+        /*padding: 2px;*/
+        padding: 10px;
+
     }
 
     .main-nav__link.main-nav__dircorreo {
