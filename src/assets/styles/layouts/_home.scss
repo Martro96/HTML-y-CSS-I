@@ -100,25 +100,25 @@ body {
 }
 
 .main-nav__link:first-child:hover, .main-nav__link.active:first-child {
-    background-color: var(--YELLOW-500);
-    padding: 15px;
-    border-radius: 15px;
-    border: solid 1px black;
+    background-color: var(--YELLOW-500) !important;
+    padding: 15px !important;
+    border-radius: 15px !important;
+    border: solid 1px black !important;
 }
 
 .main-nav__link:last-child:hover, .main-nav__link.active:last-child {
-    background-color: var(--YELLOW-500);
-    padding: 10px;
-    border-radius: 15px;
-    border: solid 1px black;
+    background-color: var(--YELLOW-500) !important;
+    padding: 10px !important;
+    border-radius: 15px !important;
+    border: solid 1px black !important;
 }
 
 /* Estilos para los enlaces centrales */
 .main-nav__link--span:hover, .main-nav__link--span.active {
-    background-color: var(--PINK-500);
-    padding: 10px;
-    border-radius: 15px;
-    border: solid 1px black;
+    background-color: var(--PINK-500) !important;
+    padding: 10px !important;
+    border-radius: 15px !important;
+    border: solid 1px black !important;
 }
 
 
