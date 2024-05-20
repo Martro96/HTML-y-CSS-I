@@ -1247,6 +1247,18 @@ figure {
     }
 
     /*NAV*/
+    .main-nav__link:first-child:hover, .main-nav__link.active:first-child {
+        margin-bottom: 10px;
+    }
+    
+    .main-nav__link:last-child:hover, .main-nav__link.active:last-child {
+        margin-bottom: 10px;
+    }
+    
+    /* Estilos para los enlaces centrales */
+    .main-nav__link--span:hover, .main-nav__link--span.active {
+        margin-bottom: 10px;
+    }
     .main-nav__link.main-nav__dircorreo {
         display: none;
     }
@@ -1326,7 +1338,7 @@ figure {
         display: flex;
         flex-direction: column;
         align-items: self-start;
-        /*gap: 1rem;*/
+        gap: 1.5rem !important;
         position: absolute;
         top: 0;
         right: 0;
