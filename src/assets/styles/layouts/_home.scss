@@ -1134,7 +1134,7 @@ figure {
 
 }
 
-.case--currentstatus--img {
+.case--currentstatus--img, .case--img {
     margin: auto;
     display: flex;
     justify-content: center;
@@ -1809,7 +1809,7 @@ figure {
 
     }
 
-    .case--currentstatus--img {
+    .case--currentstatus--img, .case--img {
         margin-top: 50px;
         width: 100%;
         object-fit: cover;
@@ -1835,8 +1835,7 @@ figure {
         position: relative;
     }
     .redesignchallenges--mobile__img1 {
-        width: 669.079px;
-        height: 712.57px;
+        width: 100%;
         object-fit: cover;
         margin-bottom: 20px;
     }
@@ -2317,7 +2316,7 @@ figure {
         margin: auto;
     }
 
-    .case--currentstatus--img {
+    .case--currentstatus--img, .case--img {
         width: 100%;
     }
 
