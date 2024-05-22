@@ -804,6 +804,7 @@ figure {
 
 .ul--item {
     margin-bottom: 20px;
+    line-height: 1.5rem;
 }
 
 .ul--item::before {
@@ -1077,13 +1078,23 @@ figure {
     background-color: var(--fondo--card);
     display: flex;
     width: 340px;
-    height: 394px;
+    //height: 394px;
+    height: 500px;
     padding: 11px 12px;
     flex-direction: column;
     align-items: center;
     gap: 24px;
     border-radius: 16px;
     border: 2px solid var(--BLACK);
+}
+.card--butler {
+    display: flex;
+    width: 259px;
+    height: 350px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
 
 .case--card__header {
@@ -1101,8 +1112,7 @@ figure {
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
-    line-height: 24px;
-    /* 133.333% */
+    line-height: 1.5rem;
     letter-spacing: 0.1px;
     list-style: none;
 }
@@ -2288,13 +2298,16 @@ figure {
         background-color: var(--fondo--card);
         display: flex;
         width: 307.208px;
-        height: 356px;
+        //height: 500px;
         padding: 9.939px 10.843px;
         flex-direction: column;
         align-items: center;
         gap: 15px;
         border-radius: 16px;
         border: 2px solid var(--BLACK);
+    }
+    .card--butler {
+        height: 450px;
     }
 
     .case--card__header {
@@ -2304,7 +2317,7 @@ figure {
 
     .case--card__text {
         font-size: 18px;
-        line-height: 15px;
+        //line-height: 1.5rem;
         list-style: none;
         padding-left: 10px;
     }
