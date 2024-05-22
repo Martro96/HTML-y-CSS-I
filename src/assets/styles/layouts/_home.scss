@@ -28,7 +28,6 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 20px;
 }
 
 .main-nav__item-email {
@@ -42,43 +41,45 @@ body {
     width: 100%;
 }
 
-.figure--alicia {
+.logo--alicia {
     position: relative;
     cursor: pointer;
+    width: 294px;
+    height: 121px;
 }
 
 .main-nav__link--alicia {
     order: -1;
-    color: var(--BLACK);
-    text-decoration: none;
-    font-size: 32px;
     width: 100%;
     position: relative;
-    z-index: 1;
+}
+
+.alicia-logo__img {
+    display: block;
+    flex-shrink: 0;
+    position: absolute;
+
 }
 
 .alicia-hovered {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    display: block;
     opacity: 0;
     visibility: hidden;
-    z-index: 2;
+    transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
 }
 
 .alicia-hovered__img {
-    position: relative;
-    top: -50px;
-    left: -21px;
+    position: absolute;
+    display: block;
+
 }
 
-.main-nav__link--alicia:hover+.alicia-hovered {
-    opacity: 1 !important;
+.main-nav__link--alicia:hover .alicia-hovered {
+    opacity: 1;
     visibility: visible;
-    order: -1;
 }
+
 
 .main-nav__link--info {
     color: var(--BLACK);
@@ -88,6 +89,9 @@ body {
     list-style: none;
     display: flex;
     width: 100%;
+    position: relative;
+    margin: 55px 0px;
+
 }
 
 .main-nav__link,
@@ -169,6 +173,8 @@ footer {
     flex-direction: column;
     align-items: flex-start;
     gap: 35px;
+    padding: 25px !important;
+
 }
 
 .info--1:hover {
@@ -191,7 +197,7 @@ footer {
     border: 4px solid var(--BLACK);
     width: 100%;
     background: var(--YELLOW-500);
-
+    padding: 28px 43px;
 }
 
 .footer--title {
@@ -699,7 +705,7 @@ figure {
     padding: 20px 45px;
     display: flex;
     gap: 40px;
-    margin: auto;
+    margin: 100px auto;
     width: 85%;
     margin-top: 50px;
 }
@@ -917,8 +923,11 @@ figure {
     justify-content: center;
     left: 50px;
     position: relative;
-    overflow: hidden;
-
+    //overflow: hidden;
+}
+.case--bloque1.info-reverse {
+    display: flex;
+    flex-direction: row-reverse !important;
 }
 
 .bloque1--case__img {
@@ -959,7 +968,8 @@ figure {
 }
 
 .case--info__subheader {
-    width: 336px;
+    width: fit-content;
+    position: relative;
     right: 0px;
     bottom: 0px;
     color: var(--BLACK);
@@ -973,7 +983,7 @@ figure {
 }
 
 .case--info2 {
-    margin: 50px;
+    margin: 50px 10px;
 }
 
 .info--rtd {
@@ -1243,7 +1253,7 @@ figure {
 /*PHONE*/
 @media only screen and (max-width: 766px) {
     .container--homepage__bloque1 {
-        padding-top: 20px !important;
+        padding-top: 100px !important;
     }
 
     /*NAV*/
@@ -1267,18 +1277,15 @@ figure {
         visibility: visible;
     }
 
-    .main-nav__link--alicia {
+   .main-nav__link--alicia {
         visibility: visible;
-        margin: 0;
         z-index: 1;
         order: -1;
         width: 100%;
-        font-size: 24px;
-        text-decoration: none;
-        position: relative;
+        position: absolute;
     }
 
-    .alicia-hovered__img {
+    /*.alicia-hovered__img {
         width: 220px;
         height: 80px;
         position: relative;
@@ -1286,13 +1293,13 @@ figure {
         left: -15px;
     }
 
-    .figure--alicia {
+    .logo--alicia {
         cursor: pointer;
         position: relative;
         height: fit-content;
         width: fit-content;
         margin: 0;
-    }
+    }*/
 
     .abrir__menu {
         display: block;
@@ -1303,8 +1310,11 @@ figure {
         color: var(--BLACK);
         font-size: 2rem;
         right: 0;
+        top: 30px;
         margin: 20px;
         background-color: var(--WHITE);
+        padding: 10px;
+
     }
 
     .abrir__menu:hover {
@@ -1383,7 +1393,7 @@ figure {
         height: 100px;
         display: flex;
         position: absolute;
-        top: -10px;
+        top: 60px;
         right: -40px;
         transform: rotate(354deg);
         overflow: hidden !important;
@@ -1552,7 +1562,7 @@ figure {
     .info--1,
     .info--2 {
         gap: 25px !important;
-        padding: 0 !important;
+        padding: 30px !important;
     }
 
     .info--1:hover,
@@ -1571,15 +1581,13 @@ figure {
 
     /*ABOUT ME*/
     .container--about {
-        padding: 0px !important;
-        display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         gap: 20px;
-        margin: 10px;
-        margin-top: 50px;
-        margin-bottom: 50px;
+        margin: 120px auto !important;
+        display: flex;
+        padding: 0 !important;
     }
 
     .container--about__bloque1 {
@@ -1698,9 +1706,9 @@ figure {
         display: none;
     }
 
-    .case--info2 {
-        margin: 20px;
-    }
+   /* .case--info2 {
+        margin: 50px 10px;
+    }*/
 
     .info--rtd {
         display: flex;
@@ -1873,6 +1881,12 @@ figure {
 @media only screen and (min-width: 768px) and (max-width: 1400px) {
 
     /*NAV*/
+    /*.logo--alicia {
+        cursor: pointer;
+        width: 294px;
+        height: 121px;
+        position: relative;
+    }
     .alicia-hovered__img {
         width: 290px;
         height: 80px;
@@ -1880,20 +1894,20 @@ figure {
         top: -30px;
         left: -15px;
     }
-
+*/
     .main-nav__link,
     .main-nav__link--span {
         visibility: visible;
         margin: 3px;
     }
 
-    .main-nav__item,
+   /* .main-nav__item,
     .main-nav__item-email,
     .main-nav__link--alicia {
-        /*padding: 2px;*/
+        padding: 2px;
         padding: 10px;
 
-    }
+    }*/
 
     .main-nav__link.main-nav__dircorreo {
         display: none;
@@ -2062,7 +2076,7 @@ figure {
     .info--1,
     .info--2 {
         gap: 25px !important;
-        padding: 0 !important;
+        padding: 25px !important;
     }
 
     .info--1:hover,
@@ -2083,8 +2097,7 @@ figure {
     .container--about {
         margin: auto;
         width: 95%;
-        margin-top: 50px;
-        margin-bottom: 50px;
+        margin: 100px auto;
         display: flex;
         flex-direction: column;
         padding: 0px !important;
@@ -2214,9 +2227,9 @@ figure {
         position: relative;
     }
 
-    .case--info2 {
+    /*.case--info2 {
         margin: 10px;
-    }
+    }*/
 
     .info--rtd {
         top: -10px;
