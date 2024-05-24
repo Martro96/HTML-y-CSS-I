@@ -929,8 +929,20 @@ figure {
 .case--bloque1.info-reverse {
     display: flex;
     flex-direction: row-reverse !important;
+    width: 80%;
+    height: 1200px;
+    margin-top: 0px;
+    justify-content: center;
+   //left: 0 !important;
+    position: relative;
 }
-
+.case--info1.info-reverse {
+    left: 100px;
+}
+.case--info2.info-reverse {
+    left: 130px;
+    position: relative;
+}
 .bloque1--case__img {
     z-index: 1;
     position: relative;
@@ -1030,13 +1042,17 @@ figure {
     bottom: -40px;
     left: -100px;
 }
-
+.texto--rtd1 .reverse {
+    bottom: -40px;
+}
 .texto--rtd2 {
     position: relative;
     bottom: -75px;
     left: -40px;
 }
-
+.texto--rtd2.reverse {
+    bottom: -50px !important;
+}
 .estrellas--rtd {
     position: relative;
     bottom: 150px;
@@ -1044,6 +1060,32 @@ figure {
     width: 247.723px;
     height: 234.05px;
     flex-shrink: 0;
+}
+
+.flecha-case.butlers--bloque1 {
+    top: -60px;
+    transform: rotate(335deg);
+    position: relative;
+    //left: -50px;
+}
+.circulo-case.butlers--bloque1 {
+    position: relative;
+    left: 220px;
+    width: 550px;
+    bottom: 300px;
+}
+.butlers-bloque1__textcircle {
+    position: relative;
+    bottom: 600px;
+    left: 330px;
+    width: 370px;
+    height: auto;
+    flex-shrink: 0;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0.1px;
+
 }
 
 .case--intro {
@@ -1120,13 +1162,51 @@ figure {
 .case--aboutcase {
     display: flex;
     width: 100%;
+    overflow: hidden;
     margin: 100px 0px;
     background-color: var(--fondo--card);
     border: 3px solid var(--BLACK);
     justify-content: space-around;
 
 }
+.about--case__text.butlers {
+    text-align: justify;
+}
 
+.case--aboutcase.actual-situation {
+    margin: auto;
+    justify-content: center;
+    width: 850px;
+    height: 850px;
+    border-radius: 48px;
+    display: flex;
+    padding: 96px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+
+    //margin-top: 150px;
+
+    
+    .about--case__header {
+        width: 100%;
+        padding: 0px 30px;
+    }
+    .about--case__text {
+        width: 80%;
+        text-align: justify;
+        font-size: 36px;
+        line-height: 36px;
+    }
+}
+.logo-actual_situation {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 50px;
+}
 .about--case__header {
     color: var(--BLACK);
     font-family: 'Nimbus', sans-serif;
@@ -1257,6 +1337,286 @@ figure {
     padding: 100px;
     width: 45%;
     margin: auto;
+}
+
+/*BUTLERS*/
+.research-butlers {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 50px;
+}
+.research-butlers__info {
+    display: flex;
+    
+}
+img.case--img.butlers{
+    margin: 0;
+    object-fit: cover;
+    }
+.texto--research {
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 133.333% */
+    letter-spacing: 0.1px;
+    padding: 50px;
+    
+    .case--ol {
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+    }
+}
+
+.competitors {
+    .case--img {
+        width: 80%;
+        margin: auto;
+    }
+    .case--cards {
+        margin: 50px auto;
+    }
+}
+.primeras-conclusiones {
+    .case--img {
+        width: 100%;
+        margin: 100px auto;
+    }
+    .about--case__header {
+        width: 100%;
+        margin: 100px auto;
+    }
+    .case--cards {
+        width: 100%;
+        align-items: flex-start;
+        gap: 65px;
+    }
+    .case--card {
+        display: flex;
+        width: 241px;
+        height: 250px;
+        padding: 10px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    .ul--item:before {
+        content: "";
+        margin: auto;
+        padding: 0%;
+    }
+    .ul--item {
+        margin: auto;
+    }
+}
+.butlers-challenge {
+    display: flex;
+    flex-direction: column;
+
+    .case--texto1 {
+        position: relative;
+        margin-top: 100px !important;
+        top: 0px;
+    }
+    .the--challenge__img {
+        width: 290.488px;
+        position: relative;
+        left: 250px;
+    }
+}
+.home-club {
+    .case--img1 {
+        width: 110%;
+        margin: 100px auto;
+    }
+    .case--img {
+        width: 80%;
+        margin: 100px auto;
+    }
+    .case--texto1 {
+        position: relative;
+        top: 0px;
+    }
+}
+
+.thegame--butler {
+    .case--img {
+        margin: auto;
+    }
+}
+.big-devices {
+    .case--img {
+        width: 100%;
+    }
+}
+
+.butlers--screens {
+    p {
+        margin: auto;
+        padding: 0px 100px 150px 100px;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0.1px;
+    }
+    .screens--mobile__butlers {
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        gap: 43px;
+        margin: auto;
+        justify-content: space-evenly;
+    }
+}
+
+.architecture-butlers {
+    .case--texto1 {
+        position: relative;
+        margin-top: 100px !important;
+        top: 0px;
+    }
+    .architecture__change {
+        width: 80%;
+        align-items: center;
+        padding: 20px;
+    }
+}
+/*.next-steps {
+    //padding: 50px;
+
+    li {
+        padding: 10px;
+    }
+}
+*/
+/*MOROKK, no sé por qué hay un espacio a la derecha del desktop design*/
+img.estrellas--rtd.morokk {
+    position: relative;
+    bottom: 0px;
+    right: -200px;
+}
+.case--bloque1.info-reverse.morokk {
+    height: 950px;
+}
+.case--research {
+    .case--img {
+        width: 100%;
+        margin-top: 100px !important;
+    }
+    .flecha-case {
+        width: 250px;
+        transform: rotate(344deg);
+        position: relative;
+        top: -100px;
+        left: 150px;
+    }
+    .case--texto1 {
+        position: relative;
+        margin-top: 100px !important;
+        top: -250px !important;
+    }
+}
+.user_persona, .case--sitemap {
+    .case--img {
+        width: 95%;
+        margin-top: 100px !important;
+    }
+    .case--texto1 {
+        margin-top: 100px !important;
+    }
+}
+.user_journey {
+    .case--img {
+        width: 95%;
+        margin-top: 100px !important;
+    } 
+    .about--case__header {
+        margin-top: 100px !important;
+    }
+}
+.case--texto {
+    margin-top: 100px;
+    width: 100%;
+
+    .estrella_derecha {
+        display: flex;
+        position: relative;
+        right: 0;
+        left: 1550px;
+        top: -55px;
+
+    }
+    .estrella_izquierda {
+        display: flex;
+        position: relative;
+        left: 250px;
+        top: -150px;
+
+    }
+}
+.case--aboutcase.morokk {
+    margin-top: 50px;
+    display: flex;
+    align-items: flex-start;
+    
+    .about--case__text {
+        align-items: flex-start;
+        margin: auto;
+        justify-content: center;
+        display: flex;
+        gap: 150px;
+    }
+    .about--items-1, .about--items-2 {
+        width: 30%;
+        justify-content: center;
+        display: block;
+    }
+}
+.case--designchoices__imgs {
+    display: flex;
+    flex-direction: column;
+
+    .case--img {
+        width: 100%;
+        margin-top: 100px !important;
+    } 
+    .flecha-case {
+            display: flex;
+            height: 243px;
+            transform: rotate(337deg);
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            right: -40%;
+            top: -40px;
+        }
+    .texto-aclarativo__morokk {
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0.1px;
+        width: 40%;
+        position: relative;
+        top: -140px;
+        left: 28%;
+    }
+}
+
+.case--midfi, .case--usability, .case--appliedchanges, .case--desktop--version {
+    .case--img {
+        width: 100%;
+        margin-top: 100px;
+    } 
+    .about--case__header {
+        margin-top: 100px !important;
+        width: 100%;
+    }
 }
 
 /*RESPONSIVE*/
