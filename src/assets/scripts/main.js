@@ -54,3 +54,23 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
+
+
+/*ANIMACIÓN SVG*/
+
+document.addEventListener('DOMContentLoaded', () => {
+    const target = document.getElementById('animatedElipse');
+
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('forma-elipse--animated');
+                observer.unobserve(entry.target); // Stop observing once animation is triggered
+            }
+        });
+    }, {
+        threshold: 0.1
+    });
+
+    observer.observe(target);
+});
