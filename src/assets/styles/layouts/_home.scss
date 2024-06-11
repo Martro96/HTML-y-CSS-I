@@ -1972,7 +1972,9 @@ img.estrellas--rtd.morokk {
     }
     
    // /*FOOTER NAV*/
-
+.alicia-hovered__img .footer {
+    display: none;
+}
 .nav__footer {
 
     .main-nav__link--info {
@@ -1985,6 +1987,7 @@ img.estrellas--rtd.morokk {
         margin: auto;
         text-align: center !important;
         align-items: center;
+        z-index: 10;
         
         padding-top: 0px;
         padding-bottom: 0px;
@@ -2029,6 +2032,7 @@ img.estrellas--rtd.morokk {
         display: block;
         position: relative;
         opacity: 0;
+        z-index: 0;
         visibility: hidden;
         transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
     }
@@ -2037,6 +2041,7 @@ img.estrellas--rtd.morokk {
         display: flex;
         position: relative;
         margin: auto;
+        visibility: hidden;
     }
     .footer--container {
         width: 90% !important;
@@ -2080,10 +2085,11 @@ img.estrellas--rtd.morokk {
     }
 
     .bloque1--intro__foto1 {
-        width: 77.297px !important;
-        height: 54.527px !important;
-        right: -40px !important;
-        top: 10px !important;
+        display: none;
+        // width: 77.297px !important;
+        // height: 54.527px !important;
+        // right: -40px !important;
+        // top: 10px !important;
     }
 
     .bloque1--intro__fotoworks {
