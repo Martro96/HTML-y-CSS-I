@@ -427,6 +427,21 @@ footer {
     }
 }
 
+ /*Definimos la animación */
+ @keyframes rotate-star {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  /* aplicamos en hover las estrellas principales (no las de los cases) */
+  .about--bloque1__sparkles:hover, .bloque1--intro__foto1:hover, .final--stars:hover, .bloque1--intro__fotoworks:hover {
+    animation: rotate-star 1s ease-in-out;
+  }
+
 .forma-elipse--animated {
     animation: moveIn 1s ease-out forwards;
 }
