@@ -5,6 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss">
+    <!-- Asegura que la CSP sea efectiva frente a ataques XSS -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self'; script-src 'self'; style-src 'self';">
     <!-- do not remove this line! -->
     <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon">
     <title>Case Study Home 24 & Butlers - Alicia Piqueras</title>
@@ -19,10 +21,11 @@
             <div class="case--bloque1 info-reverse">
                 <div class="bloque1--case__img">
                     <img class="bloque1--case__img" 
-                        src="./assets/images/case24/case_pic.svg"
-                        alt="Case picture">
-                    <!-- <object class="bloque1--case__img" data="./assets/images/case24/case_pic.svg"
-                        type="image/svg+xml"></object> -->
+                    src="./assets/images/case24/case_pic.webp" 
+                    loading="lazy"
+                    alt="Case picture"
+                    width="796"
+                    height="597">
                 </div>
                 <div class="bloque1--case__info">
                     <div class="case--info1 info-reverse">
@@ -52,12 +55,11 @@
                                 </div>
                             </div>
                         </div>
-                        <img class="flecha-case butlers--bloque1" src="./assets/images/SVG/flecha.svg" alt="Flecha decoración">
-                        <img class="circulo-case butlers--bloque1" src="./assets/images/SVG/circulo.svg" alt="Círculo decoración">
-                        <!-- <object class="flecha-case butlers--bloque1" data="./assets/images/SVG/flecha.svg"
-                            type="image/svg+xml"></object>
-                        <object class="circulo-case butlers--bloque1" data="./assets/images/SVG/circulo.svg"
-                            type="image/svg+xml"></object> -->
+                        <img class="flecha-case butlers--bloque1" src="./assets/images/SVG/flecha.svg" loading="lazy"
+                            alt="Flecha decoración">
+                        <img class="circulo-case butlers--bloque1" src="./assets/images/SVG/circulo.svg" loading="lazy"
+                            alt="Círculo decoración">
+
                         <p class="butlers-bloque1__textcircle">this project is currently being developed and will be
                             implemented in BUTLERS’stores in 2024</p>
 
@@ -116,13 +118,10 @@
                     </p>
                 </div>
             </div>
-
-
-            <!-- <object class="logo-actual_situation" data="./assets/images/case24/logo.svg" type="image/svg+xml"></object> -->
-
-            <img class="logo-actual_situation" 
-                    src="./assets/images/case24/logo.svg"
-                    alt="Estrellas decoración">
+            <img class="logo-actual_situation" src="./assets/images/case24/logo.webp" loading="lazy"
+                alt="Estrellas decoración"
+                width="790"
+                height="120">
             <div class="case--aboutcase actual-situation">
                 <h2 class="about--case__header">Actual situation</h2>
                 <div class="about--case__text">
@@ -159,20 +158,20 @@
                                 allowed us to gain firsthand insights into our current status and the steps we needed to
                                 take.</li>
                     </div>
-                    <img class="case--img butlers" 
-                        src="./assets/images/case24/home24_research.svg" 
+                    <img class="case--img butlers" src="./assets/images/case24/home24_research.webp" loading="lazy"
                         alt="Research Butlers case">
-                    <!-- <object class="case--img butlers" data="./assets/images/case24/home24_research.svg"
-                        type="image/svg+xml"></object> -->
+
 
                 </div>
             </div>
 
             <div class="competitors">
                 <h2 class="about--case__header">Competitors Analysis</h2>
-                <img class="case--img" src="./assets/images/case24/competitor_analysis.svg" alt="Competitors Analysis Buttler case">
-                <!-- <object class="case--img" data="./assets/images/case24/competitor_analysis.svg"
-                    type="image/svg+xml"></object> -->
+                <img class="case--img" src="./assets/images/case24/competitor_analysis.webp" loading="lazy"
+                    alt="Competitors Analysis Buttler case"
+                    width="1312"
+                    height="1247">
+
 
                 <div class="case--cards">
                     <div class="case--card card--butler">
@@ -209,15 +208,17 @@
             </div>
 
             <div class="primeras-conclusiones">
-                <img class="case--img" src="./assets/images/case24/primeras_conclusiones.svg" alt="Primera Conclusiones Buttler case">
-                <!-- <object class="case--img" data="./assets/images/case24/primeras_conclusiones.svg"
-                    type="image/svg+xml"></object> -->
+                <img class="case--img" src="./assets/images/case24/primeras_conclusiones.webp" loading="lazy"
+                    alt="Primera Conclusiones Buttler case"
+                    width="1400"
+                    height="1370">
+
 
                 <h2 class="about--case__header">User persona & User journey</h2>
-                <img class="case--img" 
-                    src="./assets/images/case24/USER_JOURNEY.svg" 
-                    alt="User Journey Buttler case">
-                <!-- <object class="case--img" data="./assets/images/case24/USER_JOURNEY.svg" type="image/svg+xml"></object> -->
+                <img class="case--img" src="./assets/images/case24/USER_JOURNEY.webp" loading="lazy"
+                    alt="User Journey Buttler case"
+                    width="1400"
+                    height="960">
 
                 <h2 class="about--case__header">First conclusions</h2>
                 <div class="case--cards">
@@ -254,65 +255,68 @@
                 <p class="bloque1--intro__texto1 case--texto1">
                     Our primary objective was to <span>convert BUTLERS' visitors</span> into HOME24 users.
                 </p>
-                <img class="the--challenge__img" src="./assets/images/case24/THE_CHALLENGE.svg"
-                alt="The challenge img">
-                <!-- <object class="the--challenge__img" data="./assets/images/case24/THE_CHALLENGE.svg"
-                    type="image/svg+xml"></object> -->
+                <img class="the--challenge__img" src="./assets/images/case24/THE_CHALLENGE.svg" loading="lazy"
+                    alt="The challenge img">
+
 
 
             </div>
 
             <div class="home-club">
-                <img class="case--img1" src="./assets/images/case24/home-club.svg" alt="Home Club pic case">
-                <!-- <object class="case--img1" data="./assets/images/case24/home-club.svg" type="image/svg+xml"></object> -->
+                <img class="case--img1" src="./assets/images/case24/home-club.webp" loading="lazy"
+                    alt="Home Club pic case"
+                    width="1400"
+                    height="360">
 
                 <p class="bloque1--intro__texto1 case--texto1">
                     How might we encourage BUTLERS visitors to <span>download the Home24 App</span> in order to enhance
                     the flow of customers from offline to online?</p>
-                <img class="case--img" 
-                    src="./assets/images/case24/process_solution.svg" 
-                    alt="Process with the solution">
-                <img class="case--img image_needs" 
-                    src="./assets/images/case24/interface.svg" 
-                    alt="Interface needs">
-                <img class="case--img1" 
-                    src="./assets/images/case24/foto-banco-decoración.svg" 
-                    alt="Home Club pic case">
-                <!-- <object class="case--img" data="./assets/images/case24/process_solution.svg"
-                    type="image/svg+xml"></object>
-                <object class="case--img image_needs" data="./assets/images/case24/interface.svg"
-                    type="image/svg+xml"></object>
-                <object class="case--img1" data="./assets/images/case24/foto-banco-decoración.svg"
-                    type="image/svg+xml"></object> -->
+                <img class="case--img" src="./assets/images/case24/process_solution.webp" loading="lazy"
+                    alt="Process with the solution"
+                    width="1332"
+                    height="586">
+                <img class="case--img image_needs" src="./assets/images/case24/interface.webp" loading="lazy"
+                    alt="Interface needs"
+                    width="1133"
+                    height="250">
+                <img class="case--img1" src="./assets/images/case24/foto-banco-decoración.webp" loading="lazy"
+                    alt="Home Club pic case"
+                    width="1400"
+                    height="460">
+
 
                 <div class="game-butlers">
                     <p class="bloque1--intro__texto1 case--texto1">
                         We reached the conclusion that <span>we needed to design a game</span> in which the ultimate
                         prize would be this 10% discount upon downloading the app.
                     </p>
-                    <img class="case--img" 
-                        src="./assets/images/case24/game_requirements.svg" 
-                        alt="Process with the solution">
-                    <!-- <object class="case--img" data="./assets/images/case24/game_requirements.svg"
-                        type="image/svg+xml"></object> -->
+                    <img class="case--img" src="./assets/images/case24/game_requirements.webp" loading="lazy"
+                        alt="Process with the solution"
+                        width="1153"
+                        height="130">
+
 
                 </div>
             </div>
 
             <div class="thegame--butler">
-                <!-- <object class="case--img" data="./assets/images/case24/the-games.svg" type="image/svg+xml"></object> -->
-                <img class="case--img" src="./assets/images/case24/the-games.svg" alt="The Game">
+                <img class="case--img" src="./assets/images/case24/the-games.webp" 
+                loading="lazy" alt="The Game"
+                width="1358"
+                height="2519">
             </div>
 
 
             <div class="case--aboutcase big-devices">
-               
-                <img class="case--img" 
-                    src="./assets/images/case24/the_ideal_screen.svg"
-                    alt="Mock up big devices">
-                
-               <!--  <img class="logo-actual_situation" 
+
+                <img class="case--img" src="./assets/images/case24/the_ideal_screen.webp" loading="lazy"
+                    alt="Mock up big devices"
+                    width="1400"
+                    height="1621">
+
+                <!--  <img class="logo-actual_situation" 
                     src="./assets/images/case24/big_device_butlers.svg"
+                    loading="lazy"
                     alt="Mock up big devices">
                 <div class="bloque1--texto_1 big-devices__text">
                     <p>
@@ -322,7 +326,7 @@
                         The first iterations received very positive feedback. In our meeting with the UX team at Home 24, the solution was very well received. We were discussing the size of the screen, as they already have iPads distributed throughout the store and were considering implementing the game on these devices. However, we maintained our position of using big screens instead to achieve the highest conversion rates possible. We reached the conclusion that they will implement one big screen at the very entrance of the pilot store to see how it is received by customers.
                     </p>
                 </div> -->
-              
+
             </div>
 
             <div class="butlers--screens">
@@ -332,18 +336,22 @@
                     when you open the app for the very first time.
                 </p>
                 <div class="screens--mobile__butlers">
-                    <img class="screens--mobile" 
-                        src="./assets/images/case24/screen1.svg"
-                        alt="Mock up mobile device">
-                    <img class="screens--mobile" 
-                        src="./assets/images/case24/screen2.svg"
-                        alt="Mock up mobile device">
-                    <img class="screens--mobile" 
-                        src="./assets/images/case24/screen3.svg"
-                        alt="Mock up mobile device">
-                    <img class="screens--mobile" 
-                        src="./assets/images/case24/screen4.svg"
-                        alt="Mock up mobile device">
+                    <img class="screens--mobile" src="./assets/images/case24/screen1.webp" loading="lazy"
+                        alt="Mock up mobile device"
+                        width="321"
+                        height="695">
+                    <img class="screens--mobile" src="./assets/images/case24/screen2.webp" loading="lazy"
+                        alt="Mock up mobile device"
+                        width="321"
+                        height="695">
+                    <img class="screens--mobile" src="./assets/images/case24/screen3.webp" loading="lazy"
+                        alt="Mock up mobile device"
+                        width="321"
+                        height="695">
+                    <img class="screens--mobile" src="./assets/images/case24/screen4.webp" loading="lazy"
+                        alt="Mock up mobile device"
+                        width="321"
+                        height="695">
 
 
                 </div>
@@ -354,35 +362,40 @@
                     also need to <span>rethink the information architecture in the stores.</span>
                 </p>
                 <div class="case--aboutcase">
-                    <img class="architecture__change" 
-                        src="./assets/images/case24/stairs.svg"
-                        alt="Information architecture">
-                  
-
-                </div>
-                <div class="case--aboutcase">
-                    <img class="architecture__change" 
-                        src="./assets/images/case24/poster.svg"
-                        alt="Information architecture">
+                    <img class="architecture__change" src="./assets/images/case24/stairs.webp" loading="lazy"
+                        alt="Information architecture"
+                        width="1440"
+                        height="560">
 
 
                 </div>
                 <div class="case--aboutcase">
-                    <img class="architecture__change" 
-                        src="./assets/images/case24/forniture.svg"
-                        alt="Information architecture">
-                </div>
-                <div class="case--aboutcase">
-                    <img class="architecture__change" 
-                        src="./assets/images/case24/terminals.svg"
-                        alt="Information architecture">
-                   
+                    <img class="architecture__change" src="./assets/images/case24/poster.webp" loading="lazy"
+                        alt="Information architecture"
+                        width="1440"
+                        height="560">
+
 
                 </div>
                 <div class="case--aboutcase">
-                    <img class="architecture__change" 
-                        src="./assets/images/case24/pricetags.svg"
-                        alt="Information architecture">
+                    <img class="architecture__change" src="./assets/images/case24/forniture.webp" loading="lazy"
+                        alt="Information architecture"
+                        width="1440"
+                        height="560">
+                </div>
+                <div class="case--aboutcase">
+                    <img class="architecture__change" src="./assets/images/case24/terminals.webp" loading="lazy"
+                        alt="Information architecture"
+                        width="1440"
+                        height="560">
+
+
+                </div>
+                <div class="case--aboutcase">
+                    <img class="architecture__change" src="./assets/images/case24/pricetags.webp" loading="lazy"
+                        alt="Information architecture"
+                        width="1440"
+                        height="560">
 
 
                 </div>
@@ -412,7 +425,7 @@
     <include src="./views/footer.html"></include>
 
     <!--SCRIPTS-->
-    <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
+    <script type="module" src="./assets/scripts/main.js" defer></script><!-- do not remove this line! -->
 
 
 </body>

@@ -1,11 +1,15 @@
 @font-face {
     font-family: 'Confortaa';
     src: url('../fonts/Confortaa/Comfortaa-VariableFont_wght.ttf');
+    font-display: swap;
+
 }
 
 @font-face {
     font-family: 'Nimbus';
     src: url('../fonts/Nimbus/Nimbus-Sans-Becker-PBla-Regular.ttf');
+    font-display: swap;
+
 }
 
 body {
@@ -256,8 +260,7 @@ footer {
         position: absolute;
         margin: auto;
         justify-content: center;
-        left: -50%;
-
+        right: -150px;
     }
     
     .alicia-hovered {
@@ -788,25 +791,25 @@ figure {
 }
 
 .gd--card__1 {
-    background-image: url(../images/MARLENA-20240409T153234Z-001/-HOME-BRANDING-MARLENA/3/cartel-fuera.jpg);
+    background-image: url(../images/MARLENA-20240409T153234Z-001/-HOME-BRANDING-MARLENA/3/cartel-fuera.webp);
     background-position: center;
     background-size: cover;
 }
 
 .gd--card__2 {
-    background-image: url(../images/MARLENA-20240409T153234Z-001/-HOME-BRANDING-MARLENA/1/business-cards-1.jpg);
+    background-image: url(../images/MARLENA-20240409T153234Z-001/-HOME-BRANDING-MARLENA/1/business-cards-1.webp);
     background-position: center;
     background-size: cover;
 }
 
 .gd--card__3 {
-    background-image: url(../images/MARLENA-20240409T153234Z-001/-HOME-BRANDING-MARLENA/2/cartel-fuera-cristal.jpg);
+    background-image: url(../images/MARLENA-20240409T153234Z-001/-HOME-BRANDING-MARLENA/2/cartel-fuera-cristal.webp);
     background-position: center;
     background-size: cover;
 }
 
 .gd--card__4 {
-    background-image: url(../images/MARLENA-20240409T153234Z-001/-HOME-BRANDING-MARLENA/2/cartel-fuera-cristal.jpg);
+    background-image: url(../images/MARLENA-20240409T153234Z-001/-HOME-BRANDING-MARLENA/2/cartel-fuera-cristal.webp);
     background-position: center;
     background-size: cover;
 }
@@ -1059,19 +1062,19 @@ figure {
 }
 
 .whilenot--card1 {
-    background-image: url(../images/photography.jpg);
+    background-image: url(../images/photography.webp);
     background-position: center;
     background-size: cover;
 }
 
 .whilenot--card2 {
-    background-image: url(../images/DIY.jpg);
+    background-image: url(../images/DIY.webp);
     background-position: center;
     background-size: cover;
 }
 
 .whilenot--card3 {
-    background-image: url(../images/voluntarier.jpg);
+    background-image: url(../images/voluntarier.webp);
     background-position: center;
     background-size: cover;
 }
@@ -2069,9 +2072,9 @@ img.estrellas--rtd.morokk {
     }
     
     .alicia-hovered__img {
-        display: flex;
+        // display: flex;
         position: relative;
-        margin: auto;
+        // margin: auto;
         visibility: hidden;
     }
     .footer--container {

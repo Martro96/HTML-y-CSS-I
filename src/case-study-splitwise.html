@@ -5,6 +5,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss">
+    <!-- Asegura que la CSP sea efectiva frente a ataques XSS -->
+    <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self'; img-src 'self'; script-src 'self'; style-src 'self';">
+
     <!-- do not remove this line! -->
     <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon">
     <title>Case Study Splitwise - Alicia Piqueras</title>
@@ -19,8 +23,11 @@
             <div class="case--bloque1">
                 <div class="bloque1--case__img">
                     <img class="bloque1--case__img"
-                        src="./assets/images/splitwise-20240409T153333Z-001/splitwise/before-and-after-Splitwise.svg"
-                        alt="Before and after Splitwise">
+                        src="./assets/images/splitwise-20240409T153333Z-001/splitwise/before-and-after-Splitwise.webp"
+                        loading="lazy" 
+                        alt="Before and after Splitwise"
+                        width="745"
+                        height="640">
                 </div>
                 <!-- <div class="bloque1--case__img">
                     <picture>
@@ -58,8 +65,12 @@
                         </div>
                         <!--Esta imagen en jpg la cambio por una forma creada con clip path en css
                             <img class="estrellas--rtd" src="./assets/images/stars-about.png" alt="Estrellas decoración"> -->
-                        <img class="estrellas--rtd" src="./assets/images/SVG/4_estrellas_final.svg"
-                            alt="Estrellas decoración">
+                        <img class="estrellas--rtd" 
+                        src="./assets/images/SVG/4_estrellas_final.svg" 
+                        loading="lazy"
+                        alt="Estrellas decoración"
+                        width="247"
+                        height="234">
 
 
                     </div>
@@ -123,8 +134,12 @@
             </div>
             <div class="case--currentstatus">
                 <img class="case--currentstatus--img"
-                    src="./assets/images/splitwise-20240409T153333Z-001/current-status.svg"
-                    alt="Current status Splitwise case">
+                    src="./assets/images/splitwise-20240409T153333Z-001/current-status.webp" 
+                    loading="lazy"
+                    alt="Current status Splitwise case"
+                    width="1440"
+                    height="5421"
+                    >
                 <!-- <object class="case--currentstatus--img"
                     data="./assets/images/splitwise-20240409T153333Z-001/current-status.svg"
                     type="image/svg+xml"></object> -->
@@ -151,49 +166,71 @@
             <div class="case--redesignchallenges__imgs">
                 <div class="redesignchallenges--mobile">
                     <img class="redesignchallenges--mobile__img1"
-                        src="./assets/images/splitwise-20240409T153333Z-001/splitwise/midfimockup.svg"
-                        alt="midfimockup">
+                        src="./assets/images/splitwise-20240409T153333Z-001/splitwise/midfimockup.webp" 
+                        loading="lazy"
+                        alt="midfimockup"
+                        width="1316"
+                        height="1271">
                     <img class="redesignchallenges--mobile__img2"
-                        src="./assets/images/splitwise-20240409T153333Z-001/splitwise/next-steps-mobile.svg"
-                        alt="next-steps-mobile">
+                        src="./assets/images/splitwise-20240409T153333Z-001/splitwise/next-steps-mobile.webp"
+                        loading="lazy" 
+                        alt="next-steps-mobile"
+                        width="1242"
+                        height="1747">
                     <img class="redesignchallenges--mobile__img1"
-                        src="./assets/images/splitwise-20240409T153333Z-001/splitwise/midfimockup-opened-group.svg"
-                        alt="midfimockup">
+                        src="./assets/images/splitwise-20240409T153333Z-001/splitwise/midfimockup-opened-group.webp"
+                        loading="lazy" 
+                        alt="midfimockup"
+                        width="1316"
+                        height="1271">
 
                     <img class="redesignchallenges--mobile__img2"
-                        src="./assets/images/splitwise-20240409T153333Z-001/splitwise/new-look1.svg"
+                        src="./assets/images/splitwise-20240409T153333Z-001/splitwise/new-look1.webp" 
+                        loading="lazy"
                         alt="next-steps-mobile">
                     <img class="redesignchallenges--mobile__img2"
-                        src="./assets/images/splitwise-20240409T153333Z-001/splitwise/new-look1.svg"
+                        src="./assets/images/splitwise-20240409T153333Z-001/splitwise/new-look1.webp" 
+                        loading="lazy"
+                        alt="next-steps-mobile"
+                        width="1242"
+                        height="1747">
+                    <img class="redesignchallenges--mobile__img2"
+                        src="./assets/images/splitwise-20240409T153333Z-001/splitwise/new-look3.webp" 
+                        loading="lazy"
                         alt="next-steps-mobile">
                     <img class="redesignchallenges--mobile__img2"
-                        src="./assets/images/splitwise-20240409T153333Z-001/splitwise/new-look3.svg"
-                        alt="next-steps-mobile">
-                    <img class="redesignchallenges--mobile__img2"
-                        src="./assets/images/splitwise-20240409T153333Z-001/splitwise/new-look4.svg"
+                        src="./assets/images/splitwise-20240409T153333Z-001/splitwise/new-look4.webp" 
+                        loading="lazy"
                         alt="next-steps-mobile">
 
                 </div>
                 <!-- <img class="redesign--stars" src="./assets/images/estrellas2--case.png" alt="Estrellas decoración">  -->
-               
-                <img class="redesign-challenges1"
-                    src="./assets/images/splitwise-20240409T153333Z-001/splitwise/redesign-challenges1.svg"
-                    alt="Redesign Challenges 1">
-               
 
-                <img class="redesign--stars2" src="./assets/images/estrellas3--case.png" alt="Estrellas decoración">
+                <img class="redesign-challenges1"
+                    src="./assets/images/splitwise-20240409T153333Z-001/splitwise/redesign-challenges1.webp"
+                    loading="lazy" 
+                    alt="Redesign Challenges 1">
+
+
+                <img class="redesign--stars2" src="./assets/images/estrellas3--case.png" 
+                loading="lazy"
+                    alt="Estrellas decoración">
                 <img class="redesign-challenges2"
-                    src="./assets/images/splitwise-20240409T153333Z-001/splitwise/redesign-challenges2.svg"
-                    alt="Redesign Challenges 2"> 
+                    src="./assets/images/splitwise-20240409T153333Z-001/splitwise/redesign-challenges2.webp"
+                    loading="lazy" 
+                    alt="Redesign Challenges 2">
 
             </div>
 
             <div class="case--finalscreens">
                 <!--<h2 class="about--case__header case--header__bloque">Final screens</h2>-->
                 <img class="case--finalscreens__img"
-                    src="./assets/images/splitwise-20240409T153333Z-001/splitwise/FINAL_SCREENS.svg"
-                    alt="Final screens">
-                
+                    src="./assets/images/splitwise-20240409T153333Z-001/splitwise/FINAL_SCREENS.webp" 
+                    loading="lazy"
+                    alt="Final screens"
+                    width="1440"
+                    height="834">
+
 
                 <div class="case--aboutcase">
                     <h2 class="about--case__header">Final screens</h2>
@@ -236,7 +273,7 @@
     <include src="./views/footer.html"></include>
 
     <!--SCRIPTS-->
-    <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
+    <script type="module" src="./assets/scripts/main.js" defer></script><!-- do not remove this line! -->
 
 
 </body>

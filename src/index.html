@@ -7,7 +7,9 @@
     <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss">
     <!-- do not remove this line! -->
     <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon">
-    
+    <!-- Asegura que la CSP sea efectiva frente a ataques XSS -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self'; script-src 'self'; style-src 'self';">
+
     <!--En caso de darme error swiper de nuevo, aplicar estas líneas
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">   
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
@@ -26,7 +28,7 @@
                     <span>creative boost.</span>
                 </p>
                 <!--ESTRELLITAS INICIO ANIMADAS-->
-                <img class="bloque1--intro__foto1" src="./assets/images/SVG/3_estrellas_inicio.svg" alt="sparkles">
+                <img class="bloque1--intro__foto1" src="./assets/images/SVG/3_estrellas_inicio.svg" loading="lazy" alt="sparkles" width="272.499" height="192.226">
             </div>
             <div class="bloque1--texto">
                 <div class="bloque1--texto_1">
@@ -66,15 +68,15 @@
   
         <!--ESTRELLITAS FINALES
         CAMBIO ESTA IMAGEN PNG  src="./assets/images/stars-final.png" POR LAS SVG-->
-        <img class="final--stars" src="./assets/images/SVG/4_estrellas_final.svg" alt="Estrellas final">
+        <img class="final--stars" src="./assets/images/SVG/4_estrellas_final.svg" loading="lazy" alt="Estrellas final">
 
     </div>
     <!--FOOTER-->
     <include src="./views/footer.html"></include>
     
     <!--SCRIPTS-->
-    <!-- Esto debería funcionar con npm <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
-    <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
+    <!-- Añadimos defer para cargar el script después del renderizado -->
+    <script type="module" src="./assets/scripts/main.js" defer></script><!-- do not remove this line! -->
 
 
 </body>

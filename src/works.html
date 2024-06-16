@@ -3,6 +3,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss">
+<!-- Asegura que la CSP sea efectiva frente a ataques XSS -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self'; script-src 'self'; style-src 'self';">
 <!-- do not remove this line! -->
 <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon">
 <title>Works - Alicia Piqueras</title>
@@ -21,7 +23,7 @@
                     <br>for more day to day content!
                 </p>
                 <!--ESTRELLITAS INICIO ANIMADAS-->
-                <img class="bloque1--intro__fotoworks" src="./assets/images/SVG/3_estrellas_inicio.svg" alt="sparkles">
+                <img class="bloque1--intro__fotoworks" src="./assets/images/SVG/3_estrellas_inicio.svg" loading="lazy" alt="sparkles">
             </div>
 
 
@@ -31,7 +33,7 @@
             <include src="./views/graphic-design.html"></include>
             <!--ESTRELLITAS FINALES
         CAMBIO ESTA IMAGEN PNG  src="./assets/images/stars-final.png" POR LAS SVG-->
-            <img class="final--stars" src="./assets/images/SVG/4_estrellas_final.svg" alt="Estrellas final">
+            <img class="final--stars" src="./assets/images/SVG/4_estrellas_final.svg" loading="lazy" alt="Estrellas final">
         </div>
     </div>
 
@@ -39,7 +41,7 @@
     <!--FOOTER-->
     <include src="./views/footer.html"></include>
     <!--SCRIPTS-->
-    <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
+    <script type="module" src="./assets/scripts/main.js" defer></script><!-- do not remove this line! -->
 
 </body>
 
