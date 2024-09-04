@@ -11,3 +11,5 @@ Secciones del Portfolio: Incluye secciones dedicadas a proyectos destacados, exp
 Tecnologías Utilizadas:
 Frontend: HTML5, CSS3, JavaScript
 Deploy: Hospedaje en Netlify para despliegue continuo y fácil mantenimiento.
+
+https://porfolio-alicia-piqueras.netlify.app/
