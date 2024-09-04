@@ -1,3 +1,4 @@
+# Desarrollo del porfolio de la diseñadora UX-UI Alicia Piqueras
 Este proyecto es una página web de portfolio desarrollada para Alicia Piqueras, una diseñadora UX/UI. El sitio está diseñado para mostrar sus trabajos y habilidades en diseño de interfaz de usuario y experiencia de usuario de manera visualmente atractiva y profesional. La web cuenta con una navegación intuitiva y un diseño responsivo que asegura una experiencia óptima en diferentes dispositivos y tamaños de pantalla.
 
 Características principales:
