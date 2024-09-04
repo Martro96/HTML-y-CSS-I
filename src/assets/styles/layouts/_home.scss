@@ -256,11 +256,11 @@ footer {
     }
     
     .alicia-logo__img {
+        justify-content: center;
+        margin: auto;
         display: flex;
         position: absolute;
-        margin: auto;
-        justify-content: center;
-        right: -150px;
+        right: 50%;
     }
     
     .alicia-hovered {
